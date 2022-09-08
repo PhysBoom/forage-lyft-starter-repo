@@ -9,6 +9,13 @@ class Engine:
 
 
 class CapuletEngine(Engine):
+    """
+    Capulet engine (serviced every 30,000 miles)
+
+    Attributes:
+        last_service_mileage: mileage at last service
+        current_mileage: current mileage
+    """
     def __init__(self, last_service_mileage: int = 0, current_mileage: int = 0):
         self.last_service_mileage = last_service_mileage
         self.current_mileage = current_mileage
@@ -18,6 +25,13 @@ class CapuletEngine(Engine):
 
 
 class WilloughbyEngine(Engine):
+    """
+    Willoughby engine (serviced every 60,000 miles)
+
+    Attributes:
+        last_service_mileage: mileage at last service
+        current_mileage: current mileage
+    """
     def __init__(self, last_service_mileage: int = 0, current_mileage: int = 0):
         self.last_service_mileage = last_service_mileage
         self.current_mileage = current_mileage
@@ -27,6 +41,12 @@ class WilloughbyEngine(Engine):
 
 
 class SternmanEngine(Engine):
+    """
+    Sternman engine (serviced when warning light is on)
+
+    Attributes:
+        warning_light_on: Whether the warning light is on
+    """
     def __init__(self, warning_light_on: bool):
         self.warning_light_on = warning_light_on
 

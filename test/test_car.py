@@ -13,13 +13,13 @@ from car.car_factory import (
 class TestCalliope(unittest.TestCase):
     def test_battery_should_be_serviced(self):
         car = create_calliope(
-            last_service_date=int(time.time()) - 365 * 2 * 24 * 60 * 60 - 1
+            last_service_date=int(time.time()) - 365 * 3 * 24 * 60 * 60 - 1
         )
         self.assertTrue(car.needs_service())
 
     def test_battery_should_not_be_serviced(self):
         car = create_calliope(
-            last_service_date=int(time.time()) - 365 * 1 * 24 * 60 * 60
+            last_service_date=int(time.time()) - 365 * 2 * 24 * 60 * 60
         )
         self.assertFalse(car.needs_service())
 
@@ -35,13 +35,13 @@ class TestCalliope(unittest.TestCase):
 class TestGlissade(unittest.TestCase):
     def test_battery_should_be_serviced(self):
         car = create_glissade(
-            last_service_date=int(time.time()) - 365 * 2 * 24 * 60 * 60 - 1
+            last_service_date=int(time.time()) - 365 * 3 * 24 * 60 * 60 - 1
         )
         self.assertTrue(car.needs_service())
 
     def test_battery_should_not_be_serviced(self):
         car = create_glissade(
-            last_service_date=int(time.time()) - 365 * 1 * 24 * 60 * 60
+            last_service_date=int(time.time()) - 365 * 2 * 24 * 60 * 60
         )
         self.assertFalse(car.needs_service())
 
@@ -57,13 +57,13 @@ class TestGlissade(unittest.TestCase):
 class TestPalindrome(unittest.TestCase):
     def test_battery_should_be_serviced(self):
         car = create_palindrome(
-            last_service_date=int(time.time()) - 365 * 2 * 24 * 60 * 60 - 1
+            last_service_date=int(time.time()) - 365 * 3 * 24 * 60 * 60 - 1
         )
         self.assertTrue(car.needs_service())
 
     def test_battery_should_not_be_serviced(self):
         car = create_palindrome(
-            last_service_date=int(time.time()) - 365 * 1 * 24 * 60 * 60
+            last_service_date=int(time.time()) - 365 * 2 * 24 * 60 * 60
         )
         self.assertFalse(car.needs_service())
 

@@ -14,6 +14,7 @@ class Car(Serviceable):
         engine: The car's engine
         battery: The car's battery
     """
+
     engine: Engine
     battery: Battery
 

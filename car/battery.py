@@ -15,7 +15,11 @@ class SpindlerBattery(Battery):
         current_date: The current date (UNIX)
     """
 
-    def __init__(self, last_service_date: int = int(time.time()), current_date: int = int(time.time())):
+    def __init__(
+        self,
+        last_service_date: int = int(time.time()),
+        current_date: int = int(time.time()),
+    ):
         self.last_service_date = last_service_date
         self.current_date = current_date
 
@@ -32,7 +36,11 @@ class NubbinBattery(Battery):
         current_date: The current date (UNIX)
     """
 
-    def __init__(self, last_service_date: int = int(time.time()), current_date: int = int(time.time())):
+    def __init__(
+        self,
+        last_service_date: int = int(time.time()),
+        current_date: int = int(time.time()),
+    ):
         self.last_service_date = last_service_date
         self.current_date = current_date
 

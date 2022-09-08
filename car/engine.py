@@ -16,6 +16,7 @@ class CapuletEngine(Engine):
         last_service_mileage: mileage at last service
         current_mileage: current mileage
     """
+
     def __init__(self, last_service_mileage: int = 0, current_mileage: int = 0):
         self.last_service_mileage = last_service_mileage
         self.current_mileage = current_mileage
@@ -32,6 +33,7 @@ class WilloughbyEngine(Engine):
         last_service_mileage: mileage at last service
         current_mileage: current mileage
     """
+
     def __init__(self, last_service_mileage: int = 0, current_mileage: int = 0):
         self.last_service_mileage = last_service_mileage
         self.current_mileage = current_mileage
@@ -47,6 +49,7 @@ class SternmanEngine(Engine):
     Attributes:
         warning_light_on: Whether the warning light is on
     """
+
     def __init__(self, warning_light_on: bool):
         self.warning_light_on = warning_light_on
 
